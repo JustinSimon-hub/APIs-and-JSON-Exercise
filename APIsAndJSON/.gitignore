@@ -1,0 +1,27 @@
+﻿# Build Folders
+bin/
+obj/
+
+# Visual Studio Files
+.vs/
+*.user
+*.suo
+*.cache
+
+# Logs
+*.log
+
+# Config Files (Secrets)
+appsettings.json
+appsettings.Development.json
+secrets.json
+
+# Databases
+*.db
+*.sqlite
+
+# Test Results
+TestResult*/
+
+# EF Migrations
+*.jfm
