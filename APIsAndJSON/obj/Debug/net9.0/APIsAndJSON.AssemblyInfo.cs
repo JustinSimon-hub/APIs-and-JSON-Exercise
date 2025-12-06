@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APIsAndJSON")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+025f626903cfcfff4eeb8e1cfe7c83f07f297d0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97195a7cf712277a8f24383b50daaf1e1d1fc943")]
 [assembly: System.Reflection.AssemblyProductAttribute("APIsAndJSON")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APIsAndJSON")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

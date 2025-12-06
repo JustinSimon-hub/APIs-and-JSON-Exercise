@@ -9,9 +9,12 @@ namespace APIsAndJSON
 {
     public class OpenWeatherMapAPI
     {
-        var tempApiCall = https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={e1d441b29490684c15e5d6ff7039b9bc} 
-        //Use the api to get the current weather 
+        public MainInfo Main { get; set; }
 
+        public class MainInfo
+        {
+            public double Temp { get; set; }
+        }
 
     }
 }

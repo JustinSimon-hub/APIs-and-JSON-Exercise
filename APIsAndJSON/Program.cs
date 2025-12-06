@@ -1,6 +1,7 @@
-﻿using System;
-using System.Net.Http;
+﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System;
+using System.Net.Http;
 
 namespace APIsAndJSON
 {
@@ -21,20 +22,23 @@ namespace APIsAndJSON
 
 
 
-
+            var defaultAPI = "e1d441b29490684c15e5d6ff7039b9bc";
 
             Console.WriteLine("Please enter in api key.");
-            var apiKey = Console.ReadLine();
+           // var apiKey = Console.ReadLine();
             while(true)
             {
                 Console.WriteLine();
                 Console.WriteLine("Please enter in the city name");
                 var cityName = Console.ReadLine();
-                var weatherURL = "";
+                var weatherURL = $"https://api.openweathermap.org/data/2.5/weather?q={cityName}&appid={defaultAPI}&units=imperial";
 
                 var response = client.GetStringAsync(weatherURL).Result;
+
+                var weather = JsonConvert.DeserializeObject<OpenWeatherMapAPI>(response);
+
                 //var formattedResponse = JValue.Parse(response).GetValue("main").ToString();
-                Console.WriteLine(response);
+                Console.WriteLine($"\nCurrent Temperature in {cityName}: {weather.Main.Temp}°F\n");
                 Console.WriteLine();
 
             }
